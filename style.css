@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr, 2fr, 2fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+}
+
+.header {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+.header .first-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    align-items: center;
+}
+
+.header .second-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    align-items: center;
+}
+
+.sidebar {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row-start: 1;
+}
+
+.hero {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+.hero .article {
+    display: grid;
+    grid-row: 2 / 4;
+}
+
+.hero .article .card {
+    display: grid;
+    grid-row: 2 / 4;
+}
+
+.hero .trending {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 3/ 4;
+}
+
+.hero .announcement {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
