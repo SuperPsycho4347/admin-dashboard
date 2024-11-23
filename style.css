@@ -121,6 +121,7 @@ input[type="search"] {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
     background-color: rgb(199, 218, 235);
+    border-radius: 10px;
 }
 
 .hero .projects {
@@ -142,6 +143,25 @@ input[type="search"] {
     display: grid;
     grid-column: 3 / 4;
     grid-row: 3/ 4;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.hero .trending .trend-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.hero .trending .trend-card h1 {
+    font-family: 'Oswald';
+    font-size: 1.5rem;
 }
 
 .hero .announcement {
@@ -153,12 +173,7 @@ input[type="search"] {
     gap: 10px;
 }
 
-.hero .announcement h2 {
-
-}
-
 .hero .announcement .ann-card {
-    /* /* grid-column: 3 /4; */
     display: flex;
     flex-direction: column;
     width: 300px;
