@@ -17,6 +17,10 @@ button {
     border: 1px solid white;
 }
 
+h2 {
+    font-family: 'Oswald';
+}
+
 .container {
     position: relative;
     display: grid;
@@ -116,6 +120,7 @@ input[type="search"] {
     display: grid;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
+    background-color: rgb(199, 218, 235);
 }
 
 .hero .projects {
@@ -143,4 +148,22 @@ input[type="search"] {
     display: grid;
     grid-column: 3 / 4;
     grid-row: 1 / 3;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+.hero .announcement h2 {
+
+}
+
+.hero .announcement .ann-card {
+    /* /* grid-column: 3 /4; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 20px;
 }
