@@ -11,7 +11,7 @@ li {
 button {
     padding: 5px;
     width: 70px;
-    border-radius: 13px;
+    border-radius: 20px;
     background-color: rgb(46, 138, 224);
     color: white;
     border: 1px solid white;
@@ -32,6 +32,7 @@ h2 {
 input[type="search"] {
     width: 400px;
     border-radius: 13px;
+    border: 1px solid black;
 }
 
 .header {
@@ -48,15 +49,24 @@ input[type="search"] {
     align-items: center;
 }
 
-.header .first-row input {
-    justify-self: center;
+.header .first-row .search {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20px;
 }
 
-.header .first-row p {
-    justify-self: center;
+.header .first-row .search input {
+    margin-left: 10px;
+}
+
+.header .first-row .name {
+    display: flex;
+    gap: 30px;
+    align-items: center;
     font-family: 'Oswald';
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .header .second-row {
@@ -70,6 +80,12 @@ input[type="search"] {
 .header .second-row .user {
     display: flex;
     justify-content: center;
+    gap: 20px;
+}
+
+.avatar {
+    width: 70px;
+    border-radius: 50%;
 }
 
 .header .second-row .user .info {
@@ -84,13 +100,18 @@ input[type="search"] {
 }
 
 .header .second-row .user .info p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.header .second-row .user .info h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
 .header .second-row .btns {
     justify-self: center;
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 .sidebar {
