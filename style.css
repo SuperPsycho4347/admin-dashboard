@@ -12,13 +12,15 @@ button {
     padding: 5px;
     width: 70px;
     border-radius: 20px;
-    background-color: rgb(46, 138, 224);
-    color: white;
+    background-color: #ffe52c;
+    /* color: white; */
     border: 1px solid white;
 }
 
 h2 {
     font-family: 'Oswald';
+    font-weight: normal;
+    font-size: 1.8rem;
 }
 
 .container {
@@ -120,20 +122,24 @@ input[type="search"] {
     grid-row: 1 /4;
     /* gap: px; */
     justify-items: center;
-    background-color: rgb(46, 138, 224);
-    color: white;
+    background-color: #ffe52c;
+    /* color: white; */
     /* width: 195px; */
 }
 
 .sidebar h1 {
+    font-family: 'Oswald';
     font-weight: normal;
+    margin-top: 20px;
+    margin-left: -2px;
 }
 
 .sidebar ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    gap: 10px;
     margin-bottom: 20px;
     font-size: 1.3rem;
 }
@@ -142,7 +148,7 @@ input[type="search"] {
     display: grid;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
-    background-color: rgb(199, 218, 235);
+    background-color: #fff3ac;
     border-radius: 10px;
 }
 
@@ -153,6 +159,8 @@ input[type="search"] {
     margin-top: -200px;
 }
 
+
+
 .hero .article {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -161,12 +169,27 @@ input[type="search"] {
 }
 
 .hero .article .card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 300px;
     background-color: white;
     padding: 10px;
-    border-radius: 10px;
-    gap: 20px;
+    border-radius: 10px;  
+    gap: 10px;  
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .article .card .action{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.hero .article .card p {
+    font-weight: 200;
+    text-align: center;
 }
 
 .hero .trending {
