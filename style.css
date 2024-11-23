@@ -8,12 +8,26 @@ li {
     list-style: none;
 }
 
+button {
+    padding: 5px;
+    width: 70px;
+    border-radius: 13px;
+    background-color: rgb(46, 138, 224);
+    color: white;
+    border: 1px solid white;
+}
+
 .container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr, 4fr;
     grid-template-rows: 1fr, 1fr, 1fr;
-    gap: 10px;
+    gap: 2px;
+}
+
+input[type="search"] {
+    width: 400px;
+    border-radius: 13px;
 }
 
 .header {
@@ -30,8 +44,15 @@ li {
     align-items: center;
 }
 
+.header .first-row input {
+    justify-self: center;
+}
+
 .header .first-row p {
     justify-self: center;
+    font-family: 'Oswald';
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .header .second-row {
@@ -43,6 +64,7 @@ li {
 
 .header .second-row .user {
     display: flex;
+    justify-content: center;
 }
 
 .header .second-row .user .info {
@@ -51,8 +73,19 @@ li {
     align-items: center;
 }
 
+.header .second-row .user .info p,
+.header .second-row .user .info h1 {
+    font-family: 'Oswald';
+}
+
+.header .second-row .user .info p {
+    font-size: 1.2rem;
+}
+
 .header .second-row .btns {
     justify-self: center;
+    display: flex;
+    gap: 50px;
 }
 
 .sidebar {
